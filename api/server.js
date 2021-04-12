@@ -27,6 +27,7 @@ app.post("/api/hashtag", (req, res) => {
 });
 
 
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));
 
