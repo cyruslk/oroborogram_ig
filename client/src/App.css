@@ -1,0 +1,221 @@
+@font-face {
+  font-family: oro;
+  src: url("fonts/oro.otf") format("opentype");
+}
+
+
+body {
+	 background: #f4f6fc;
+   overflow: hidden;
+   background: linear-gradient( 45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column; 
+  width: 90%;
+}
+
+ .iphone-x {
+   top: 0;
+   transform: scale(0.8);
+	 width: 360px;
+	 height: 780px;
+	 border-radius: 40px;
+	 box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+}
+ .iphone-x:before, .iphone-x:after {
+	 content: '';
+	 position: absolute;
+	 left: 50%;
+	 transform: translateX(-50%);
+}
+ .iphone-x:after {
+	 bottom: 7px;
+	 width: 140px;
+	 height: 4px;
+	 background-color: #f2f2f2;
+	 border-radius: 10px;
+}
+ .iphone-x:before {
+	 top: 0px;
+	 width: 56%;
+	 height: 30px;
+	 background-color: #1f1f1f;
+	 border-radius: 0px 0px 40px 40px;
+}
+
+
+.iphone-posts main img{
+  width: 100%;
+}
+
+.iphone-container{
+  overflow: scroll;
+  height: 82%;
+  background-color: lightgray;
+}
+
+.form-container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 3vw;
+}
+
+input{
+  border-radius: 6px;
+  border-color: black;
+  padding: 1vw;
+  border-width: 1px;
+  margin-bottom: 1vw;
+}
+
+.form-container form p{
+  font-family: fantasy;
+  font-size: 2vw;
+}
+
+header{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+header img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 10px;
+}  
+
+.logo{
+  font-family: fantasy;
+  font-size: 1.8vw;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: arial;
+}
+
+html{
+  height:100%;
+}
+body{
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.window .header{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px 10px;
+  padding-top: 3vw;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;  
+  border-bottom: 1px solid;
+}
+
+.window .footer{
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 10px;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+  box-shadow: 0 -2px 5px 0px #ddd;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding-bottom: 1.6vw;
+  border-top: 1px solid;
+}
+
+
+.window .footer img{
+  transform: scale(0.9);
+}
+
+
+.window .footer img:first-child{
+  opacity:1;
+}
+.window .content{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+.content .post{
+  display: flex;
+  align-items:center;
+  padding:0px 10px;
+  justify-content:space-between;
+}
+ .post *{
+  padding:5px 0px;
+}
+ .post .profile-img{
+  border-radius:50%;
+}
+ .post .name{
+  display: flex;
+  justify-content:flex-start;
+}
+.post .name p{
+  padding-left:5px;
+  font-weight:bold;
+  font-size:0.8em;
+}
+
+.caption{
+  font-size: 12px;
+  padding: 1vw;
+}
+
+ .likes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.likes *{
+  padding:5px 5px;
+}
+
+ .like-count{
+  display: flex;
+  align-items: center;
+  padding:0px 10px;
+}
+ .like-count p{
+  font-size:0.7em;
+  padding:5px;
+  font-weight:bold;
+}
+footer{
+  color:#fff;
+  padding-top: 5px;
+  font-size:0.8em;
+}
+footer a{
+  color:#aaa;
+}
