@@ -14,15 +14,19 @@ function Post(props){
     timestamp
   } = props.postData
 
+  let imgStyle = {
+    filter: `blur(${likes}px)`
+  }
+
   return(
     <div className="iphone-posts">
       <header>
           <img src={props.pic} />
-          <p>{props.name}</p>
-          <i className="header-more fas fa-ellipsis-v" />
       </header>
       <main>
-        <img src={thumbnail} />
+      <img 
+          src={thumbnail} 
+       />
       </main>
       <div className="likes">
         <div className="left-icons">

@@ -83,6 +83,18 @@ function App(){
             </div>
           </div>
       </main>
+      <section className="section_2">
+          <div>
+            <h1 style={{fontFamily: "fantasy"}}>OROBOROGRAM</h1>
+            <h1>Randomly selected CSS Styles:</h1>
+            <code>
+              filter: blur();
+            </code>
+            <code>
+              filter: sepia();
+            </code>
+          </div>
+       </section> 
     </div>
   )
 }

@@ -4,6 +4,10 @@
 }
 
 
+*{
+  outline: none;
+}
+
 body {
 	 background: #f4f6fc;
    overflow: hidden;
@@ -16,6 +20,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section_1{
+  margin-right: 10vw;
+}
+
+.section_2{
+  margin-left: 10vw;
+}
+
+button{
+  height: 7vh;
+  width: 70%;
+  font-family: fantasy;
+  font-size: 2vw;
+  border: none;
+  background-color: transparent;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 3vw;
 }
 
 form{
@@ -75,14 +99,20 @@ form{
 input{
   border-radius: 6px;
   border-color: black;
+  height: 4vh;
   padding: 1vw;
   border-width: 1px;
+  background-color: lightgray;
   margin-bottom: 1vw;
+  font-size: 1.5vw;
+  font-family: fantasy;
 }
 
 .form-container form p{
   font-family: fantasy;
   font-size: 2vw;
+  margin: 0;
+  margin-bottom: 3vw;
 }
 
 header{
@@ -190,6 +220,11 @@ body{
 .caption{
   font-size: 12px;
   padding: 1vw;
+  font-family: fantasy;
+}
+
+code{
+  display: block;
 }
 
  .likes{

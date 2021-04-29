@@ -13,6 +13,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.post("/api/hashtag", (req, res) => {
+
+  // res.send({
+  //   data: mock_data.data
+  // })
+
   let hashtag = req.body.post;
   InstaClient.getHashtag(req.body.post)
   .then((hashtag) => {
@@ -21,9 +26,6 @@ app.post("/api/hashtag", (req, res) => {
     })
     console.log(hashtag)
   }).catch(err => console.error(err));
-  // res.send({
-  //   data: mock_data.data
-  // })
 });
 
 
